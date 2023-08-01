@@ -24,6 +24,22 @@
     background-color: #525252;
 }
 
+/* ---------- Special paddings/margins/text */
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.general-sub {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    color: #fafafa
+}
+
 /* ---------- Heading */
 
 header {
@@ -102,4 +118,12 @@ header {
 .hvr-sweep-to-bottom:before {
     background: rgba(211, 211, 211, 0.5);
     height: 120px;
+}
+
+/* ---------- Footer */
+
+footer {
+    background-color: #525252;
+    color: #fafafa;
+    min-height: 120px;
 }
