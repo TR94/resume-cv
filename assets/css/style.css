@@ -32,6 +32,11 @@
     background-color: #f4f4f4;
 }
 
+.bg-color-work-history {
+    background-color: #9b59b6;
+}
+
+
 /* ---------- Special paddings/margins/text */
 
 h1, h2, h3, h4 {
@@ -264,4 +269,14 @@ footer {
 
 .progress-section {
     margin: 40px 20px;
+}
+
+
+/* ---------- Work history */
+.history-heading {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    color: #fafafa;
 }
