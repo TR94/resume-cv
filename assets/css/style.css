@@ -196,11 +196,11 @@ footer {
     color: #e84610;
 }
 
-.social-links {
+.linkedin-link {
     padding-bottom: 15px;
 }
 
-.social-links li a i {
+.linkedin-link i {
     width: 32px;
     height: 32px;
     padding: 12px 0;
@@ -216,7 +216,7 @@ footer {
     -o-transition: all 0.35s ease-in-out;
 }
 
-.social-links li a i:hover {
+.linkedin-link i:hover {
     background: #e84610;
 }
 
