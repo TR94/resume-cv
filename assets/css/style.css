@@ -375,3 +375,10 @@ button[type="submit"] {
         max-width: 50%;
     }
 }
+
+/* ----------------------------------------Interests */
+
+#map {
+    min-height: 360px;
+    width: 100%;
+}
