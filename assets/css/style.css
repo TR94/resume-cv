@@ -386,3 +386,10 @@ button[type="submit"] {
     min-height: 360px;
     width: 100%;
 }
+
+/* ----------------------------------------Github */
+
+#loader {
+    height: 30px;
+    width: 30px;
+}
