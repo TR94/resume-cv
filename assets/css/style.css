@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
+html {
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+}
+
 /*--------------------------------------------Colors*/
 
 .bg-color-name-title {
@@ -146,6 +152,7 @@ header {
     height: 120px;
     text-align: center;
     padding: 0;
+    min-width: 136px;
 }
 
 .menuitem a {
@@ -153,10 +160,15 @@ header {
     text-decoration: none;
     color: #fff;
     height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-wrap: wrap;
+    padding: 0 2px;
 }
 
 .menuitem a i {
-    padding-top: 22px;
+    /* padding-top: 22px; */
     display: block;
     color: #fafafa;
     font-size: 26px;
@@ -286,17 +298,40 @@ footer {
     margin-bottom: 4px;
 }
 
-.progress-type {
+.progress-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     position: absolute;
     left: 0px;
+}
+
+.progress-type {
     font-weight: 400;
-    padding: 3px 30px 2px 10px;
+    padding: 3px 6px 2px 6px;
     color: #fafafa;
-    background-color: rgba(25, 25, 25, 0.2);
 }
 
 .progress-section {
     margin: 40px 20px;
+}
+
+.progress-group {
+    margin: 32px 0 16px 0;
+}
+
+#skills-dialog {
+    position: relative;
+    padding: 32px 16px;
+    border: 2px solid grey;
+    border-radius: 8px;
+}
+
+#close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    color: grey;
 }
 
 /* ----------------------------------------Work History */
