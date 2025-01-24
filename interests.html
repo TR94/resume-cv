@@ -1,48 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="Enter your description here"/>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="icon" type="image/x-icon" href="assets/images/tab-icon.png">
-<title>Tyrone Rutherford</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/tab-icon.png">
+    <title>Tyrone Rutherford: Interests</title>
 </head>
+
 <body>
-    <header>
-        <div class="row no-gutters">
+    <header class="container-fluid">
+        <div class="row">
             <a class="col-md-4 logo" href="02-index.html"></a>
             <div class="col-md-8">
                 <div class="row no-gutters bg-color-name-title">
                     <div class="col heading">
                         <h1 class="name">Tyrone Rutherford</h1>
-                        <h2 class="title"> Front-End Developer</h2>
+                        <h2 class="title">Developer</h2>
                     </div>
                 </div>
                 <div class="row no-gutters">
-                    <div class="col">
+                    <div id="menu" class="col">
                         <ul id="nav" class="list-inline menucontainer">
                             <li class="col-xl-2 col-md-4 col-sm-6 list-inline-item ui-menu-color-home menuitem">
-                                <a href="index.html" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+                                <a href="index.html" class="hvr-sweep-to-bottom"><i class="fa fa-home"
+                                        aria-hidden="true"></i><span>Home</span></a>
                             </li>
                             <li class="col-xl-2 col-md-4 col-sm-6 list-inline-item ui-menu-color-resume menuitem">
-                                <a href="resume.html" class="hvr-sweep-to-bottom"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a>
+                                <a href="resume.html" class="hvr-sweep-to-bottom"><i class="fa fa-graduation-cap"
+                                        aria-hidden="true"></i><span>Resume</span></a>
+                            </li>
+                            <li class="col-xl-2 col-md-4 col-sm-6 list-inline-item ui-menu-color-project menuitem">
+                                <a href="project.html" class="hvr-sweep-to-bottom"><i
+                                        class="fa-regular fa-folder-open"></i><span>Projects</span></a>
                             </li>
                             <li class="col-xl-2 col-md-4 col-sm-6 list-inline-item ui-menu-color-interests menuitem">
-                                <a href="interests.html" class="hvr-sweep-to-bottom"><i class="fa fa-lightbulb" aria-hidden="true"></i><span>Interests</span></a>
-                            </li>
-                            <li class="col-xl-2 col-md-4 col-sm-6 list-inline-item ui-menu-color-contact menuitem">
-                                <a href="contact.html" class="hvr-sweep-to-bottom"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Contact</span></a>
+                                <a href="interests.html" class="hvr-sweep-to-bottom"><i class="fa fa-lightbulb"
+                                        aria-hidden="true"></i><span>Interests</span></a>
                             </li>
                             <li class="col-xl-2 col-md-4 col-sm-6 list-inline-item ui-menu-color-download menuitem">
-                                <a href="assets/cv/Tyrone Rutherford CV.pdf" target="_blank" class="hvr-sweep-to-bottom"><i class="fa fa-download" aria-hidden="true"></i><span>Download CV</span></a>
+                                <a href="assets/cv/Tyrone Rutherford CV.pdf" target="_blank"
+                                    class="hvr-sweep-to-bottom"><i class="fa fa-download"
+                                        aria-hidden="true"></i><span>Download CV</span></a>
                             </li>
                             <li class="col-xl-2 col-md-4 col-sm-6 list-inline-item ui-menu-color-github menuitem">
-                                <a href="github.html" class="hvr-sweep-to-bottom"><i class="fa fa-github" aria-hidden="true"></i><span>GITHUB</span></a>
+                                <a href="github.html" class="hvr-sweep-to-bottom"><i class="fa fa-github"
+                                        aria-hidden="true"></i><span>GITHUB</span></a>
                             </li>
                         </ul>
                     </div>
@@ -52,80 +60,66 @@
     </header>
     <section class="container-fluid">
         <div class="row">
-            <div class="col-md-4 bg-color-conferences section-column">
-                <div class="row">
-                    <div class="col-12">
-                        <h3 class="section-heading uppercase">
-                            Conferences And Meetups Attended
-                        </h3>
-                    </div>
-                </div>
-                <div id="map"></div>
-            </div>
-            <div class="col-md-8 bg-color-groups">
+            <div class="col bg-color-groups">
                 <div class="row">
                     <div class="col">
-                        <h3 class="section-heading uppercase">My Groups And Societies</h3>
+                        <h3 class="section-heading uppercase">My Interests</h3>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
                         <div class="row">
-                            <div class="col-2">
-                                <i class="three-reasons-icon fa fa-users" aria-hidden="true"></i>
+                            <div class="col-1">
+                                <i class="three-reasons-icon fa-solid fa-user-gear" aria-hidden="true"></i>
                             </div>
-                            <div class="col-10">
-                                <h4 class="three-reasons-heading uppercase">Coding Grace</h4>
-                                <p>
-                                    Coding Grace are a group of developers based in Ireland who love to code and do other geeky and not necessarily crafty activities. Some of us code full-time, or just for fun (or both). We have people who are part of other technical user groups such as
-                                    Dublin ALT.NET, GameCraft, Python Ireland, Ruby Ireland and more.
-                                    <a href="https://codinggrace.com/" target="_blank">Coding Grace</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
-                        <div class="row">
-                            <div class="col-2">
-                                <i class="three-reasons-icon fa fa-users" aria-hidden="true"></i>
-                            </div>
-                            <div class="col-10">
-                                <h4 class="three-reasons-heading uppercase">Django Girls</h4>
-                                <p>
-                                    Django Girls is a non-profit organization and a community that empowers and helps women to organize free, one-day programming workshops by providing tools, resources and support. We are a volunteer run organization with hundreds of people contributing
-                                    to bring more amazing women into the world of technology.
-                                    <a href="https://djangogirls.org/" target="_blank">Django Girls</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
-                        <div class="row">
-                            <div class="col-2">
-                                <i class="three-reasons-icon fa fa-users" aria-hidden="true"></i>
-                            </div>
-                            <div class="col-10">
-                                <h4 class="three-reasons-heading uppercase">Full Stack NY</h4>
-                                <p>
-                                    Our meetup is an event where web designers and developers can come together to learn from and teach each other about emerging technologies. While speakers at Full Stack focus primarily on angularjs, react, node, hapiJS, espress, plain ole' JavaScript,
-                                    HTML, and CSS, we encourage all local web professionals to join us for vivid discussions around technology across the stack in any language.
-                                    <a href="https://www.meetup.com/javascript-full-stack-development/" target="_blank">Full Stack NY</a>
-                                </p>
+                            <div class="col-11">
+                                <h4 class="three-reasons-heading uppercase">Technical</h4>
+                                <p>As a full stack developer, I’m deeply intrigued by emerging technologies and how they
+                                    are shaping the future of software engineering. Here are some of the areas I’m
+                                    particularly excited about:</p>
+                                <ul>
+                                    <li>Web Frameworks & Tools: Angular 19 has been a key focus of mine recently,
+                                        enabling the creation of highly interactive, efficient, and maintainable web
+                                        applications. I’m always eager to explore new tools that improve developer
+                                        productivity.</li>
+                                    <li>AI & Machine Learning Integration: The convergence of AI with software
+                                        engineering is an ever growing topic. From incorporating chatbots into
+                                        applications to leveraging machine learning for predictive analytics, there is
+                                        no doubt AI is here to stay so it'll be interesting to how to tool gets applied.
+                                    </li>
+                                    <li>Robotics: With a background in engineering, I’ve always been curious by the
+                                        intersection of mechanical and software found with robots. From designing
+                                        control systems to integrating sensors and AI, I enjoy keeping up to date with
+                                        the latest developments in the feild.</li>
+                                    <li>Cybersecurity: While I don’t have prior experience in this field, I’m eager to
+                                        dive into the world of cybersecurity. I’m particularly interested in learning
+                                        how to identify vulnerabilities, safeguard systems, and stay ahead of emerging
+                                        threats in an increasingly connected world.</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                     <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
                         <div class="row">
-                            <div class="col-2">
-                                <i class="three-reasons-icon fa fa-users" aria-hidden="true"></i>
+                            <div class="col-1">
+                                <i class="three-reasons-icon fa-solid fa-tree" aria-hidden="true"></i>
                             </div>
-                            <div class="col-10">
-                                <h4 class="three-reasons-heading uppercase">IoT Nation</h4>
-                                <p>
-                                    IoT Nation's mission is to inspire, engage, and connect entrepreneurs, investors, professionals, & enthusiasts worldwide who are active in the Internet of Things (IoT). This group is for professionals and enthusiasts in the Internet of Things. We welcome
-                                    those who want to learn about this emerging field which is fascinating as IoT makes use of a diverse range of technologies and has the promise to impact a vast number of vertical markets.
-                                    <a href="https://www.meetup.com/NYCIOT/" target="_blank">IoT Nation</a>
-                                </p>
+                            <div class="col-11">
+                                <h4 class="three-reasons-heading uppercase">Outside of work</h4>
+                                <p>When I’m not coding, you can find me out in the wild. I’m a huge fan of outdoor
+                                    adventures and enjoy pushing my limits in nature. Here’s what I love: </p>
+                                <ul>
+                                    <li>Mountain Biking: There’s nothing quite like the thrill of navigating technical
+                                        trails and experiencing the rush of adrenaline as I tackle steep descents.
+                                        Living in the Forest of Dean, I am spoilt for options to ride right from the
+                                        doorsetp.</li>
+                                    <li>Motorcycle Trials Riding: This is my ultimate test of precision and balance.
+                                        Overcoming challenging obstacles on two wheels is both a mental and physical
+                                        challenge that keeps me sharp.</li>
+                                    <li>General Outdoors: Hiking, camping, or just exploring nature’s beauty I find
+                                        inspiration and peace in the great outdoors, which often fuels my creativity
+                                        when I’m back at the desk.</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -134,85 +128,34 @@
         </div>
     </section>
     <footer class="container-fluid">
-    <div id="footer-details" class="row">
-        <div class="col-sm-4">
-            <h5 class="uppercase general-sub">About</h5>
-            <p class="inline-block">Frontend developer skills in HTML, CSS and JavaScript. 
-                Student with Code Institute on a Full Stack Software Development Diploma. 
-                Moving industries from Manufacturing to Software and looking for the first new role as a frontend developer.</p>
+        <div id="footer-details" class="row">
+            <div class="col-sm-6">
+                <h5 class="uppercase general-sub">About</h5>
+                <p class="inline-block">Frontend developer skills in HTML, CSS and JavaScript.
+                    Student with Code Institute on a Full Stack Software Development Diploma.
+                    Moving industries from Manufacturing to Software and looking for the first new role as a frontend
+                    developer.</p>
+            </div>
+            <div class="col-sm-3">
+                <h5 class="uppercase general-sub">Download</h5>
+                <p class="inline-block">Need a printable version of my CV? Download it here.</p>
+                <a href="/assets/CV/Tyrone Rutherford CV July '23.pdf" target="_blank" class="cv-pdf">
+                    <i class="fa fa-download" aria-hidden="true"></i>
+                    <span class="sr-only">Download link</span>
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <h5 class="uppercase general-sub">LinkedIn</h5>
+                <a href="https://www.linkedin.com/in/tyrone-rutherford-abb10787/" target="_blank" class="linkedin-link">
+                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                    <span class="sr-only">LinkedIn link.</span>
+                </a>
+            </div>
         </div>
-        <div class="col-sm-4">
-            <h5 class="uppercase general-sub">Download</h5>
-            <p class="inline-block">Need a printable version of my CV? Download it here.</p>
-            <a href="/assets/CV/Tyrone Rutherford CV July '23.pdf" target="_blank" class="cv-pdf">
-                <i class="fa fa-download" aria-hidden="true"></i>
-                <span class="sr-only">Download link</span>
-            </a>
-        </div>
-        <div class="col-sm-4">
-            <h5 class="uppercase general-sub">LinkedIn</h5>
-            <a href="https://www.linkedin.com/in/tyrone-rutherford-abb10787/" target="_blank" class="linkedin-link">
-                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-                <span class="sr-only">LinkedIn link.</span>
-            </a>
-        </div>
-    </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/d05202a75f.js" crossorigin="anonymous"></script>
-
-    <script>
-        async function initMap() {
-            // Request needed libraries.
-            const { Map, InfoWindow } = await google.maps.importLibrary("maps");
-            const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary(
-                "marker",);
-            const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 7,
-                center: {lat: 51.454463, lng: -2.587619},
-                mapId: "map",
-            });
-            const infoWindow = new google.maps.InfoWindow({
-                content: "",
-                disableAutoPan: true,
-            });
-            // Create an array of alphabetical characters used to label the markers.
-            const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-            // Add some markers to the map.
-            const markers = locations.map((position, i) => {
-                const label = labels[i % labels.length];
-                const pinGlyph = new google.maps.marker.PinElement({
-                glyph: label,
-                glyphColor: "white",
-                });
-                const marker = new google.maps.marker.AdvancedMarkerElement({
-                position,
-                content: pinGlyph.element,
-                });
-
-                // markers can only be keyboard focusable when they have click listeners
-                // open info window when marker is clicked
-                marker.addListener("click", () => {
-                infoWindow.setContent(position.lat + ", " + position.lng);
-                infoWindow.open(map, marker);
-                });
-                return marker;
-            });
-
-            // Add a marker clusterer to manage the markers.
-            new MarkerClusterer({ markers, map });
-}
-
-const locations = [
-    { lat: 51.465154, lng: -2.585150 },
-];
-    </script>
-    <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
-        ({key: "AIzaSyCw4e7nJDs3sXDkUj899uKwWS-yFwiRvMc", v: "weekly"});</script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCw4e7nJDs3sXDkUj899uKwWS-yFwiRvMc&callback=initMap"></script>
-
-    
 </body>
+
 </html>

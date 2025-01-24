@@ -17,11 +17,22 @@ html {
 }
 
 .bg-color-personal-info {
-    background-color: #f4f4f4;
+    background-color: #e67e22;
+    color: white;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
 }
 
 .bg-color-work-history {
     background-color: #9b59b6;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.bg-color-projects {
+    background-color: #3498db;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
 }
 
 .ui-menu-color-home {
@@ -40,7 +51,7 @@ html {
     background-color: darkblue;
 }
 
-.ui-menu-color-contact {
+.ui-menu-color-project {
     background-color: #3498db;
 }
 
@@ -48,7 +59,7 @@ html {
     background-color: #525252;
 }
 
-.bg-color-contact {
+.bg-color-project {
     background-color: #fff;
 }
 
@@ -83,6 +94,7 @@ h4 {
     display: table-cell;
     padding: 0 30px 30px;
     float: none;
+    margin-bottom: 16px;
 }
 
 .history-heading,
@@ -96,7 +108,7 @@ h4 {
 /*--------------------------------------------Heading*/
 
 header {
-    margin: 0;
+    margin: 16px 0;
 }
 
 .heading {
@@ -109,9 +121,9 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 360px;
-    transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
+    transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out;
 }
 
 .name {
@@ -132,11 +144,15 @@ header {
 }
 
 .list-inline-item:not(:last-child) {
-    margin: 0;
+    margin: 0 !important;
 }
 
 .menucontainer {
     font-size: 0;
+}
+
+#menu {
+    padding: 0;
 }
 
 #nav li {
@@ -165,10 +181,12 @@ header {
     justify-content: center;
     text-wrap: wrap;
     padding: 0 2px;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease-in-out;
 }
 
 .menuitem a i {
-    /* padding-top: 22px; */
     display: block;
     color: #fafafa;
     font-size: 26px;
@@ -185,11 +203,22 @@ header {
     letter-spacing: 2px;
 }
 
+
 /*--------------------------------------------Hover.css*/
 
-.hvr-sweep-to-bottom:before {
+.menuitem a::before {
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: rgba(220, 220, 220, 0.2);
-    height: 120px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menuitem a:hover::before {
+    transform: translateY(-100%);
 }
 
 /* ----------------------------------------Footer */
@@ -198,8 +227,15 @@ footer {
     background-color: #525252;
     color: #fafafa;
     min-height: 120px;
-    margin: 0;
+
 }
+
+/* @media(min-width: 1300px) {
+    footer {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+} */
 
 .cv-pdf i {
     font-size: 18px;
@@ -242,6 +278,7 @@ footer {
 
 #footer-details {
     padding: 20px;
+    margin: 0 16px;
 }
 
 /* ----------------------------------------Three Reasons */
@@ -322,16 +359,30 @@ footer {
 
 #skills-dialog {
     position: relative;
-    padding: 32px 16px;
-    border: 2px solid grey;
+    padding: 40px 24px;
+    border: none !important;
     border-radius: 8px;
 }
 
+#info:hover {
+    cursor: pointer;
+    color: #e84610;  
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
 #close {
+    display: block;
     position: absolute;
-    right: 8px;
-    top: 8px;
+    right: 16px;
+    top: 16px;
     color: grey;
+}
+
+#close:hover {
+    cursor: pointer;
 }
 
 /* ----------------------------------------Work History */
@@ -382,7 +433,64 @@ footer {
     margin-bottom: 30px;
 }
 
+/* ----------------------------------------Education */
+
+.ed-bullet {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+/* ----------------------------------------Projects */
+
+#project-content {
+    max-width: 1100px;
+    margin: 32px auto 64px auto;
+}
+
+.timeline-item button h4:hover {
+    color: #e67e22;
+}
 /* ----------------------------------------Contact form */
+
+#contact-open {
+    border: none;
+    border-radius: 4px;
+    padding: 6px;
+    background-color: none;
+}
+
+#contact-close {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    color: grey;
+}
+
+#contact-close:hover {
+    cursor: pointer;
+}
+
+#contact-open:hover {
+    cursor: pointer;
+    background-color: #e84610;
+    color: white;  
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+#contact-dialog {
+    margin: auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 16px;
+    border: none;
+    position: relative;
+}
 
 .contact-heading {
     font-family: "Quicksand", sans-serif;
@@ -394,7 +502,10 @@ footer {
 .center-form {
     padding-top: 10px;
     margin: 0 auto;
-    max-width: 70%;
+}
+
+input, textarea {
+    margin-top: 8px;
 }
 
 button[type="submit"] {
@@ -402,18 +513,18 @@ button[type="submit"] {
     margin-bottom: 20px;
     color: #fafafa;
     background-color: #e84610;
+    border: none;
 }
 
 /* ----------------------------------------Media Queries */
 
-@media(min-width: 992px) {
+/* @media(min-width: 992px) {
     .center-form {
         padding-top: 30px;
         min-height: 240px;
         margin: 0 auto;
-        max-width: 50%;
     }
-}
+} */
 
 /* ----------------------------------------Interests */
 
